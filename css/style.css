@@ -146,6 +146,9 @@ display: flex;
    text-align: center;
    position: relative;
 }
+.site-settings .main-right .customer-links .item:hover {
+    background-color: var(--color-dark);
+}
 
 .site-settings .main-right .customer-links .item #heart .badge {
     
@@ -175,9 +178,13 @@ display: flex;
     color:#222529;
     text-decoration: none;
 }
-.site-settings .main .links a:hover, .site-settings .main-right .customer-links a:hover {
+.site-settings .main .links a:hover {
+    color: var(--color-red-0);
+}
+
+.site-settings .main-right .customer-links a:hover {
     font-weight:600;
-    color:#FF7373;
+    color:#fff;
     
     text-decoration: none;
 }
@@ -334,8 +341,8 @@ a.red-button:hover {
          text-decoration: none;
         }
         a.white-button:hover {
-            background-color: var(--color-red-0);
-            color:#fff
+            background-color: var(--color-dark);
+            color:var(--color-red-0);
         }
 
 .btn-border::after {
@@ -716,7 +723,7 @@ card:hover  {
 
 }
  .featured-gallery {
-    align-items: center;
+  
     display: grid;
    
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -746,7 +753,7 @@ card:hover  {
 }
 .pamela-flash > .item-1 {
     display: block;
-    width: 810px;
+    width: 795px;
     height: 403px;
     display: flex;
     justify-content: flex-end; 
@@ -758,7 +765,7 @@ card:hover  {
 }
 .pamela-flash > .item-1 .pamela-text {
     display: inline-block;
-    width: 825px;
+    width: 100%;
     margin-right: 2.5rem;
 text-align: end;
 position: relative;
@@ -1239,7 +1246,7 @@ left: 100px;
     }
     .horizontal.card .card-menu li a {
         background-color: white;
-       margin-bottom: 0.5rem;
+       margin-bottom: 0.2rem;
     
    
         height: 30px;
@@ -1250,7 +1257,7 @@ left: 100px;
         align-items: center;
         box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.06) ;
         align-items: center;
-      line-height:1.9rem;
+      line-height:1.7rem;
       text-align: center;
        position: relative;
        font-size: 0.7rem;
@@ -1278,8 +1285,8 @@ left: 100px;
     .horizontal.card  .featured-image {
         height: 200px;
     }
-    .horizontal.card -background .featured-image-dark {
-        height: 200px;
+    .horizontal.card .background .featured-image-dark {
+        height: 400px;
         display: none;
     }
     .horizontal.card:hover  .featured-image-dark {
@@ -1296,7 +1303,7 @@ left: 100px;
         opacity: 0.90;
         transition: height 0.02s ease-in-out;
     }
-
+ 
     /* section home footer */
     .home-footer-section > .container {
         max-width: 1110px;
@@ -1317,7 +1324,9 @@ left: 100px;
     .home-footer > .item-1 {
         margin-top: 3rem;
         text-align: center;
+     
     }
+
     .home-footer > .item-1 h3 {
         margin-top: 1.5rem;
         font-size: 1.25rem;
@@ -1340,6 +1349,15 @@ left: 100px;
         display: inline-block;
         box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.09) ;
         align-items: center;
+         }
+
+         .home-footer > .item-1 .item:hover {
+            background-color: var(--color-dark);
+            color: var(--color-white);
+         
+         }
+         .home-footer > .item-1 .item:hover img {
+           filter: invert(100%);
          }
 
 
