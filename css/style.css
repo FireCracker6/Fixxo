@@ -1354,6 +1354,7 @@ left: 100px;
          .home-footer > .item-1 .item:hover {
             background-color: var(--color-dark);
             color: var(--color-white);
+            box-shadow: 0px 5px 10px 5px rgba(183, 158, 158, 0.242) ;
          
          }
          .home-footer > .item-1 .item:hover img {
