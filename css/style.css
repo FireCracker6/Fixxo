@@ -318,6 +318,40 @@ a.red-button:hover {
         color:#FF7373
     }
 
+    /* Post Comments button */
+
+.post-button {
+ 
+
+    display: block;
+     height: 46px;
+     width: 207px;
+     background: #FF7373;;
+     position: relative;
+    border: none;
+
+     text-align: center;
+     align-self: center;
+     
+    
+    
+     padding: 3px;
+     color: #fff;
+     text-align: center;
+     font-family: 'Poppins', sans-serif;
+     font-size: 1rem;
+     font-weight: 600;
+     padding-top: 0.8rem;
+     }
+    a.post-button {
+     text-decoration: none;
+     color: #fff;
+    }
+    a.post-button:hover {
+        background-color: #222529;
+        color:#FF7373
+    }
+
  
 /* BLACK button*/
 .black-button {
@@ -1818,4 +1852,81 @@ left: 100px;
             color: var(--color-white);
             box-shadow: 0px 0px 5px 5px rgba(127, 127, 127, 0.06) ;
             }
+         .map-photo > .container-fluid {
+            display: flex;
+            justify-content: center;
+         }
+
+         /* forms section */
+         .form-comments > .container {
+            max-width: 1110px;
+            display: flex;
+         }
+         .form-comments > .container .header {
+            margin-top: 60px;
+            display: block;
+         }
+         .form-comments > .container .header h2 {
+            font-size: 1.5rem;
+            font-weight: var(--font-weight-extra-bold);
+            margin-bottom: 2rem;
+         }
+         .forms-input > .container {
+            max-width: 1110px;
+            display: flex;
+         }
+         .forms-input > .container form {
+            display: grid;
+             grid-template-areas: 'myArea mail'
+                            'myArea mail'
+                            'comments comments';
          
+           row-gap: 1.5rem;
+        
+        
+            margin-bottom: 60px;
+          
+      
+         }
+         .forms-input > .container form .item-1 {
+            grid-area: myArea;
+         
+         }
+         .forms-input > .container form .item-1 input {
+            padding: 0.8rem;
+            max-width: 500px;
+            width: 500px;
+            margin-right: 10px;
+         }
+         .forms-input > .container form .item-2 {
+            grid-area: mail;
+          
+         }
+         .forms-input > .container form .item-2 input {
+            padding: 0.8rem;
+            max-width: 500px;
+            width: 500px;
+         }
+         .forms-input > .container form .item-3 {
+            grid-area: comments;
+         }
+         .forms-input > .container form .item-3 input {
+            padding: 0.5rem;
+            width: 1010px;
+         }
+      #name:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid var(--color-gray-3);
+      }
+      #email:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid var(--color-gray-3);
+      }
+       #comments:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid var(--color-gray-3);
+         } 
+       
