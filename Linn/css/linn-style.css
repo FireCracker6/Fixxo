@@ -1,0 +1,583 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@FireCracker6 
+LinnRodin
+/
+C-Users-aelro-OneDrive-Dokument-Assignment2-Website
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+C-Users-aelro-OneDrive-Dokument-Assignment2-Website/css/style.css
+@LinnRodin
+LinnRodin updated
+Latest commit be2ce86 6 minutes ago
+ History
+ 1 contributor
+560 lines (438 sloc)  11.4 KB
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap%27);
+
+/*----------------------------------------Base----------------------------------------- */
+:root {
+--color-theme: #20D3C2;
+--color-theme-light: #EDfCFA;
+--color-theme-dark: #0e153D;
+--color-theme-light-dark: #50546E;
+--color-dark-3: #000000;
+--color-dark: #080C24;
+--color-dark-2: #23262A;
+--color-dark-4: #222529;
+--color-white: #FFFFFF;
+--color-white-1: #F5F5F5;
+--color-white-2: #E6E6E6;
+--color-white-3: #F7F8FA;
+--color-white-4: #F8F8F8;
+--color-grey-0: #AAAAAA;
+--color-grey-1: #CCCCCC;
+--color-grey-2: #E3E3E3;
+--color-grey-3: #EEEEEE;
+--color-grey-4: #F6F6F6;
+--color-grey-5: #777777;
+--color-grey-6: #616365;
+--color-grey-7: #BBBBBB;
+--color-grey-8: #707070;
+--color-product-instock: #82D8C6 ; 
+--color-product-outofstock: #FE6C6C ; 
+--color-product-outofstock-2: #FF7373;
+
+--font-play: Play, sans-serif;
+--font-roboto: Roboto, sans-serif;
+--font-weight-regular: 400;
+--font-weight-medium: 500;
+--font-weight-bold: 700;
+--font-size-14: 1.17rem ;
+--font-size-16: 1.33rem ;
+--font-size-18: 1.50rem;
+--font-size-24: 2rem;
+--font-size-36: 3rem;
+--font-size-60: 5rem;
+--font-size-65: 5rem;
+
+--border-radius-small: 8px;
+--border-radius-medium: 25px;
+--border-radius-rounded: 50%;
+}
+
+/*--------------------------------------General--------------------------------------- */
+html, body { 
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+}
+
+
+/* ----------------------------------General-button-------------------------------- */
+
+
+.special_button{
+    position: relative;
+    background-color: var(--color-product-outofstock-2);
+    height: 50px;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: poppins;
+    border-radius: 0;
+    border: none;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+}
+
+.special_button::before,
+.special_button::after{
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+}
+
+.special_button::before{
+    left: 0.3rem;
+    top: 0.3rem;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+}
+.special_button::after{
+    right: 0.3rem;
+    bottom: 0.3rem;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+
+/*--------------------------------------Top-menu------------------------------------ */
+.top-menu {
+    background-color: var(--color-grey-4);
+    color: var(--color-dark-3);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+    .top-menu  .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+
+
+    
+/*---------------Top-menu-social-media-and-links------------------- */
+   
+  
+    .top-menu .menu-links a {
+        color: var(--color-dark-3);
+        text-decoration: none;
+        margin: 0 1.2rem;
+    }       
+        .top-menu .menu-links a:hover {
+            color: var(--color-product-outofstock-2);
+        }
+
+    .top-menu .menu-links .social-media {
+        margin-left: 1rem;
+        font-size: var(--font-size-14);
+    }
+
+        .top-menu .menu-links .social-media a {
+            margin: 0 0.3rem;
+        }
+            .top-menu .menu-links .social-media a:last-child {
+                margin: 0 0 0 0.3rem;
+            }
+
+/*----Round-buttons-top-menu----*/
+
+ .social-media .btn {
+    border-radius: 50%;
+ }
+
+
+/* ---------------------------------------Showcase--------------------------------------------------*/
+
+.showcase .container_s {
+    background-color: var(--color-grey-4);
+    max-width: 1922px;
+   
+}
+
+.showcase .container_s .showcase-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .showcase-content h1 {
+        font-size: var(--font-size-60);
+        font-weight: var(--font-weight-bold);
+        text-align: center;
+    }
+
+    .showcase-content img {
+        width: 570px;
+        height: 570px;
+    }
+
+/*--------Button-main-menu------*/
+
+.general_button .special_button {
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+
+
+
+/* .showcase {
+    display: flex;
+    justify-content: space-between;
+   width: 100%;
+    background-color: #E6E6E6;
+    align-items: center;
+    margin-bottom: 65px;
+}
+.showcase > .container-fluid {
+    max-width: 1922px;
+    display: flex;
+ 
+    justify-content: space-between;
+    align-items: center;
+}
+.sale-banner {
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.sale-banner h1 strong{
+    display: inline-flex;
+        font-size: 65px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+      padding-bottom: 10px;
+    }
+    .sale-banner p {
+        display: block;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+.sale-red-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+ 
+} */
+
+
+
+/*---------------------Section winter clearance and New arrivals-------------------------*/
+
+
+    .sale-banner > .container {
+       position: relative;
+       
+    }
+
+    .sale-banner {
+        margin-top: 5rem;
+        display: flex;
+        max-width: 1680px;
+        justify-content: space-between;
+        flex-direction: row;
+      
+    }
+
+    .sale-banner h1 strong {
+       font-size: 40px;
+       font-weight: var(--font-weight-bold);
+       font-family: 'poppins' , sans serif;
+       color: black;
+       position: absolute;
+       top: 120%;
+     
+    }
+        .sale-banner p {
+            color: black;
+            position: absolute;
+            top: 145%;
+        }
+      
+        
+    .sale-banner .img_1 {
+       width: 15%;
+       
+    }
+
+    .sale-banner .img_2 {
+        width: 32%;
+      
+    }
+
+    .sale-banner .general_button{
+        position: absolute;
+        top: 150%;
+        
+    }
+
+
+
+/*  Alternativ
+    .products-banner {
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.products-flash {
+    display: flex;
+    justify-content: center;
+    width: 1680px;
+    align-items: center;
+}
+.products-flash > .item-1 {
+    display: block;
+    width: 1045px;
+    height: 560px;
+    display: flex;
+    background-image: url(/images/winter-clearance-bg.svg);
+    padding-top: 6rem;
+}
+.products-flash > .item-1 .prod-text {
+    width: 500px;
+    padding-left: 50px;
+}
+.products-flash > .item-1 .prod-text h2 strong {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-extra-bold);
+    font-size: 40px;
+}
+.products-flash > .item-1 .prod-text p {
+    font-size: 1rem;
+    font-family: var(--font-poppins);
+    padding-top: 2rem;
+}
+.products-flash > .item-2 {
+    display: flex;
+    background-image: url(/images/new-arrivals-bg.svg);
+    width: 635px;
+    height: 560px;
+    justify-content: center;
+    padding-top: 12.8rem;
+} 
+.products-flash > .item-2 .prod-text {
+    width: 100%;
+    padding-left: 50px;
+}
+.products-flash > .item-2 .prod-text h2 strong {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-extra-bold);
+    font-size: 40px;
+}
+.products-flash > .item-2 .prod-text .buttons {
+    padding-top: 1.5rem;
+}
+*/
+
+
+/* -------------------------------Featured-products---------------------------------*/
+
+
+.new-arrivals .grid {        
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, 1fr; 
+}
+
+.new-arrivals-header {
+    margin-top: 10px;
+}
+
+.card {
+    position: relative;
+    height: 323px;
+    width: 255px;
+    background-color: var(--color-gray-2);
+    border-radius: 0;
+    border: none;
+    overflow: hidden;
+   
+}
+
+    .card .card-menu {
+        position: absolute;
+        top: 101%;
+        right: 2%;
+        list-style: none;
+        margin: auto;
+        padding: 0.5rem;
+        background-color: var(--color-gray-2);
+        transition: top 0.3s ease-in-out;
+    }
+
+        .card:hover .card-menu {
+            top: 1px;
+        }
+
+        .card .card-menu li {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+           
+        }
+
+            .card-menu li .btn  {
+                border-radius: 50%;
+            }
+
+
+.card .card-general {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+ 
+    .card .card-general .card-info {
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        margin-bottom: 0;
+    } 
+
+        .card .card-general .category {
+            margin-bottom: 0.5rem;
+            left: 38%;
+            font-family: var(--font-poppins);
+            font-weight: var(--font-weight-regular);
+            font-size: 13px;
+        }
+
+        .card .card-general h1 {
+            font-family: var(--font-poppins);
+            font-weight: var(--font-weight-semibold);
+            font-size: 16px;
+        }
+
+        
+        .card .card-general  .text-theme {
+           color: red;
+           
+            background-color: #FF7373;
+
+         
+        }
+
+
+    /* Prices */
+    .card .card-general .card-price {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: white;
+    }
+        .card .card-general .card-price .card-old-price {
+            text-decoration: line-through;
+        }
+        
+        /* Button QUICK VIEW */
+        .card .card-general .btn-red {
+            position: absolute;
+            top: 101%;
+            right: 0;
+            width: 100%;
+            transition: top 0.3s ease-in-out;
+            background-color: #FF7373;
+        }
+            .card:hover .card-general .btn-red {
+                top: -135px;
+            }
+    
+.card .card-background {
+    position: absolute;
+    top: 101%;
+    width: 100%;
+    height: 70%;
+    background-color: var(--color-grey-1);
+    z-index: -1;
+
+}
+
+    .card:hover .card-background {
+        height: 100%;
+    }
+
+
+/* --------------Showcase pamelas reif and lets be concious----------------------*/
+
+
+/* Img-left*/
+
+.img-left {   
+    position: relative;
+    width: 633px;
+    height: 314px;
+    background-image: url(/images/pamela_reif.svg);
+}
+
+    .img-left h1 {
+        position: absolute;
+        left: 57%;
+        top: 30%;
+        font-family: var(--font-poppins);
+        font-weight: var(--font-weight-bold);
+        font-size: 35px;
+        color: var(--color-white);
+    }
+
+.img-left .general_button {
+    position: absolute;
+    left: 58%;
+    top: 67%;
+    width: 9rem;
+    height: 3rem;
+    background-color: var(--color-theme-dark);
+    transition: 0.3s ease-in-out;
+}
+    .img-left button:hover {
+        background-color: var(--color-white);
+        color: var(--color-theme);
+    }
+
+ 
+
+/* Img-right */
+
+.img-right {   
+    position: relative;
+    width: 633px;
+    height: 314px;
+    background-image: url(/images/lets-be-con.svg);
+}
+
+    .img-right h1 {
+        position: absolute;
+        left: 57%;
+        top: 30%;
+        font-family: var(--font-poppins);
+        font-weight: var(--font-weight-bold);
+        font-size: 35px;
+        color: var(--color-white);
+    }
+
+        .img-right .general_button {
+            position: absolute;
+            left: 58%;
+            top: 67%;
+            width: 9rem;
+            height: 3rem;
+            background-color: var(--color-theme-dark);
+            transition: 0.3s ease-in-out;
+        }
+                .img-left button:hover {
+                    background-color: var(--color-white);
+                    color: var(--color-theme);
+                }
+
+            
+                        
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+C-Users-aelro-OneDrive-Dokument-Assignment2-Website/style.css at master · LinnRodin/C-Users-aelro-OneDrive-Dokument-Assignment2-Website

@@ -611,7 +611,7 @@ a.red-button:hover {
 }
 .card:hover .card-menu  {
     display: block;
-top: 0;
+    top: 0;
 }
 .fa-stack.small { font-size: 0.5em; }
     i { vertical-align: middle; }
@@ -1914,19 +1914,12 @@ left: 100px;
             padding: 0.5rem;
             width: 1010px;
          }
-      #name:focus {
+      #name:focus, #email:focus, #comments:focus {
         outline: none;
         box-shadow: none;
         border: 1px solid var(--color-gray-3);
       }
-      #email:focus {
-        outline: none;
-        box-shadow: none;
-        border: 1px solid var(--color-gray-3);
-      }
-       #comments:focus {
-            outline: none;
-            box-shadow: none;
-            border: 1px solid var(--color-gray-3);
-         } 
-       
+
+    
+
+   

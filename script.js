@@ -71,3 +71,41 @@ $(".input-number").keydown(function (e) {
             e.preventDefault();
         }
     });
+
+
+
+
+    /* Form required */
+    document.querySelectorAll("input").forEach(input => {
+  
+        if (input.required) {
+    
+           /*  document.querySelector(`#${input.name}-label`).value += ' *' */
+          var isRequired =  document.getElementById(input.id).required = true
+          console.log(isRequired)
+        
+          document.getElementById(isRequired).value = "*"
+            const comments =  document.getElementById('comments-label');
+
+            comments.value = "Add your comments here. We will get back to you as soon as possible."
+          
+    
+        switch(input.type) {
+            case "text" :
+                console.log("validera texten")
+                break;
+                case "email" :
+                    console.log("validera email")
+                    break;
+                case "password" :
+                    console.log("validera password")
+                    break;
+                case "checkbox" :
+                    console.log("är rado")
+                    break;
+        
+    
+            }
+        }
+    })
+    
