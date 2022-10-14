@@ -1,0 +1,11 @@
+.__btn-background {
+  background-color: rgb(175, 11, 11);
+  height: 39px;
+  width: 39px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.06);
+  align-items: center;
+  text-align: center;
+  position: relative;
+}/*# sourceMappingURL=WhiteCircleButton.min.css.map */

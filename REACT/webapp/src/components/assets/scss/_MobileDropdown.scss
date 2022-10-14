@@ -1,0 +1,68 @@
+.mobile-menu button {
+  display: flex;
+  border: 1px solid black;
+    background-color: transparent;
+    color: $color-dark;
+    border: none;
+
+    font-size:1.5rem;
+  
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  
+    padding: 0;
+    margin-RIGHT: 1rem;
+    transition: 0.15s ease-in-out;
+  }
+
+.mobile-container > .mobile-menu {
+  width: 100%;
+
+}
+  .mobile-menu button::after {
+    content: none;
+}
+.dropdown button {
+  background-color: transparent;
+  border:none !important;
+  border-radius: 0 !important;
+}
+
+.dropdown button {
+  background-color: transparent;
+  border:none !important;
+  border-radius: 0 !important;
+}
+.show.dropdown button:active {
+  background-color: transparent;
+}
+.dropdown-menu.show {
+  display: block;
+  width: auto;
+  background-color: transparent;
+}
+.show.dropdown button:hover {
+  background-color: $color-dark;
+  border:none !important;
+  border-radius: 0 !important;
+}
+.dropdown-menu.btn.btn-primary {
+  padding-top: 0rem;
+  background-color: transparent;
+  border: none;
+width: 100%;
+}
+.dropdown-menu.btn.btn-primary:hover {
+  background-color: transparent;
+}
+.dropdown-menu .dropdown-item {
+  font-size: 0.5rem;
+  width: 30%;
+}
+
+@media (min-width: 992px) {
+  .mobile-container {
+    display: none;
+  }
+}
