@@ -27,16 +27,22 @@
   background-color: transparent;
   border:none !important;
   border-radius: 0 !important;
+  box-shadow: none !important;
 }
-
-.dropdown button {
-  background-color: transparent;
+.dropdown button:hover  {
+  background-color: black !important;
   border:none !important;
   border-radius: 0 !important;
+  box-shadow: none !important;
 }
-.show.dropdown button:active {
-  background-color: transparent;
+.show.dropdown button:focus  {
+  background-color: black !important;
+  border:none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
+
+
 .dropdown-menu.show {
   display: block;
   width: auto;
@@ -66,3 +72,4 @@ width: 100%;
     display: none;
   }
 }
+ 

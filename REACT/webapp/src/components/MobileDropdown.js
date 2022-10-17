@@ -8,7 +8,7 @@ function MobileDropdown() {
     <>
        <div className='mobile-container '>
                         <div className="mobile-menu ">
-     <Dropdown >
+     <Dropdown className=''>
        <Dropdown.Toggle >
        <i className="fas fa-bars"></i>
        </Dropdown.Toggle>

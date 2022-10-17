@@ -1,0 +1,23 @@
+.sale-banner {
+  display: inline-block;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.sale-banner h1 strong {
+  display: inline-flex;
+  font-size: 65px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-bottom: 10px;
+  white-space: "pre-line";
+}
+.sale-banner p {
+  display: block;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=ShowcaseBanner.min.css.map */

@@ -1,9 +1,10 @@
 .__showcase {
     background: rgb(230,230,230);
     background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(245,245,245,1) 0%);
-    padding-top: 100px;
-/*     display: flex;
-    justify-content: space-between; */
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
 
     .container-fluid {
      
@@ -19,11 +20,19 @@
           place-items: center;
 
          /*  background-color: red ; */
+
+                img {
+                    width: 100%;
+                    height:100%;
+                    object-fit: cover;
+                }
+
+                .fr-1 {
+                    height: auto;
+                 }
+       
         }
-        .showcase-Grid img {
-            width: 100%;
-            height:100%;
-            object-fit: cover;
-        }
+       
+       
     }
 }
