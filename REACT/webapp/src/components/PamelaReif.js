@@ -26,7 +26,7 @@ function PamelaReif(props) {
                              <strong>Let's Be <br/>Conscious</strong>
                           </h2>
                          
-                            <WhiteButton />
+                          <WhiteButton link="/search" text="TEST" />
                       </div>
                   </div>
               </div>

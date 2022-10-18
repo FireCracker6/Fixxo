@@ -1,9 +1,18 @@
-import React from 'react'
+ import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-function WhiteButton() {
+const WhiteButton= ({link, text}) => {
   return (
-    <div className="buttons "> <a href="product-detail.html" className="white-button btn-border-white">FLASH SALE</a></div>   
+<div className='buttons'>
+    <NavLink  className="white-button btn-border">
+
+<div to={link} >   
+<p >{text}</p>  </div>
+
+    </NavLink>
+    </div>
+  
   )
 }
 
-export default WhiteButton
+export default WhiteButton 

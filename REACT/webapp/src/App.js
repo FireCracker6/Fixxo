@@ -1,5 +1,6 @@
 
 import './App.min.css';
+import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import DiscountBanner from './components/DiscountBanner';
 import FeaturedProducts from './components/FeaturedProducts';
 import Footer from './components/Footer';
@@ -11,6 +12,12 @@ import Showcase from './components/Showcase';
 import SpecialOffer1 from './components/SpecialOffer1';
 import SpecialOffer2 from './components/SpecialOffer2';
 import Specialty from './components/Specialty';
+import Home from './views/HomeView';
+import Contacts from './views/ContactsView';
+import HomeView from './views/HomeView';
+import ContactsView from './views/ContactsView';
+import ProductDetailsView from './views/ProductDetailsView';
+import NotFoundView from './views/NotFoundView';
 
 
 
@@ -21,22 +28,18 @@ function App() {
   return (
    <>
 
-    <Navbar />
-   
-    <Showcase />
-
-    <ProductsBanner />
-    <FeaturedProducts />
-    <PamelaReif />
-    <Specialty />
-    <SpecialOffer1 />
-    <SpecialOffer2 />
-    <DiscountBanner />
-    <HomeFooter />
-    <Footer />
-    {/* <div style={{"height": "5000px"}}></div> */}
-    
   
+
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<HomeView />}/>
+      <Route path='/productdetails' element={<ProductDetailsView />}/>
+      <Route path='/contacts' element={<ContactsView />}/>
+      <Route path='*' element={<NotFoundView />}/>
+
+    </Routes>
+   
+    </BrowserRouter>
    </>
   );
 }
