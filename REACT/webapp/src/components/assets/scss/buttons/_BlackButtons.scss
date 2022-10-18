@@ -9,11 +9,11 @@
               position: relative;
      
          padding: 3px;
-         color: #fff;
+         color: $color-white;
          text-align: center;    
-         font-family: 'Poppins', sans-serif;
+         font-family: $font-poppins;
          font-size: 1rem;
-         font-weight: 600;
+         font-weight: $font-weight-medium;
          padding-top: 18px;
          a {
             text-decoration: none;
@@ -23,7 +23,7 @@
          text-decoration: none;
         }
         a.black-button:hover {
-            background-color: #FF7373;
+            background-color: $color-red-0;
             color:#fff;
             transition: 0.2s ease-in-out;;
         }

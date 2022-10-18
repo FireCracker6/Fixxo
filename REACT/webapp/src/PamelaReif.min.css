@@ -1,0 +1,75 @@
+/* Pamela Reifs picks banner */
+.pamela-banner {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.pamela-flash {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.pamela-flash > .item-1 {
+  display: block;
+  width: 795px;
+  height: 403px;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(/src/images/pamela-image-bg.svg);
+  background-repeat: no-repeat;
+  padding-top: 6rem;
+  margin-right: 1.875rem;
+}
+
+.pamela-flash > .item-1 .pamela-text {
+  display: inline-block;
+  width: 100%;
+  margin-right: 2.5rem;
+  text-align: end;
+  position: relative;
+}
+
+.pamela-flash > .item-1 .pamela-text h2 strong {
+  font-family: var(--font-poppins);
+  font-weight: var(--font-weight-extra-bold);
+  color: var(--color-white);
+  font-size: 40px;
+}
+
+.pamela-flash > .item-2 {
+  display: flex;
+  background-image: url(/scr/images/conscious-image-bg.svg);
+  background-repeat: no-repeat;
+  width: 825px;
+  height: 403px;
+  justify-content: center;
+  padding-top: 6rem;
+}
+
+.pamela-flash > .item-2 .prod-text {
+  width: 100%;
+  padding-left: 50px;
+}
+
+.pamela-flash > .item-2 .prod-text h2 strong {
+  font-family: var(--font-poppins);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: 40px;
+}
+
+.pamela-flash > .item-1 .pamela-text .buttons {
+  position: absolute;
+  margin-left: 495px;
+  padding-top: 2.5rem;
+}
+
+.pamela-flash > .item-2 .prod-text .buttons {
+  padding-top: 2rem;
+  padding-top: 2.7rem;
+}/*# sourceMappingURL=PamelaReif.min.css.map */

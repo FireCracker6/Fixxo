@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
 @import './utilities';
 @import './core/variables';
 @import './Navbar';
@@ -9,6 +11,14 @@
 @import './ShowcaseBanner';
 @import './buttons/RedButton';
 @import './buttons/BlackButtons';
+@import './buttons/WhiteButtons';
 @import './sections/ProductsBanner';
 @import './sections/ProductsFlash';
-@import './sections/FeaturedProducts'
+@import './sections/FeaturedProducts';
+@import './sections/PamelaReif';
+@import './sections/Specialty';
+@import './sections/SpecialOffer';
+@import './sections/SpecialOffer2';
+@import './sections/DiscountBanner';
+@import './sections/HomeFooter';
+@import './sections/Footer';

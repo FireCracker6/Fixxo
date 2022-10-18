@@ -1,3 +1,6 @@
+@import '../core/variables';
+
+
 * {
     margin: 0;
     padding: 0;
@@ -22,17 +25,26 @@ margin-top: 20px;
     background-size: contain;
     background-position-x: center;
     background-color: #cac0be;
-    height: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+ 
 
     .prod-text {
-        margin-top: 220px;
+        display: block;
         text-align: center;
+        margin-bottom: 80px;
+        height: 50%;
+    
 
         > h2 strong {
    
             font-size: $font-size-24;
             
               text-align: center;
+          
            
            }
 
@@ -41,6 +53,8 @@ margin-top: 20px;
             width: 80%;
             text-align: left;
             margin-left: 50px;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
         }
     }
 
@@ -51,6 +65,7 @@ margin-top: 20px;
         text-align: center;
         display: inline-flex;
         width: 100%;
+    
         .black-button {
    
             width:  60%;
@@ -72,14 +87,22 @@ margin-top: 20px;
     height: 100%;
     background-color: #E8E8E8;
     justify-content: center;
+   /*  padding-bottom: 30px; */
+    position: relative;
 
     .prod-text {
-        margin-top: 265px;
-    
+        position: absolute;
+
+        width: 100%;
+        bottom: 30px;
+        left: 0;
+  
+   
+      margin-bottom: 30px;
     
         > h2 {
             text-align: center;
-            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
         }
         > h2 strong {
             font-family: $font-poppins;
@@ -116,7 +139,7 @@ margin-top: 20px;
 
 
 
-@media (min-width:1600px) {
+@media (min-width:1200px) {
     .__GRID-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -133,18 +156,24 @@ margin-top: 20px;
         
         .item.item-1 {
             display: flex;
-            width: 1045px;
+            width: 800px;
             background-size: contain;
             background-position-x: 100%;
+            position: relative;
+          
         
             text-align: left;
+           
 
             .prod-text {
-                margin-top: 180px;
-        
+     
+               position: absolute;
+               bottom: 50px;
+               left: 0;
                 width: 500px;
                 padding-left: 50px;
                 text-align: left;
+      
 
                 h2 strong {
         
@@ -168,7 +197,7 @@ margin-top: 20px;
                 .buttons {
 
                     justify-content:flex-start;
-
+                    
                     .black-button {
                         width: 188px
                     }
@@ -177,25 +206,32 @@ margin-top: 20px;
                
                
             }
+         
           
         }
 
      
         .item.item-2 {
+           position: relative;
             width: 635px;
             background-size: contain;
             background-position-x: 100%;
-            padding-top: 12.8rem;
-
+          
+ 
             .prod-text {
+                position: absolute;
+                bottom: 50px;
+                left: 0;
                 width: 100%;
-                padding-left: 2rem;
+                padding-left: 50px;
                 text-align: left;
-                margin-top: 130px;
+        
+              
                    
                
                     > h2 {
                         text-align: left;
+                        padding-bottom: 4rem;
                     }
                     > h2 strong {
                         font-family: $font-poppins;
@@ -223,4 +259,8 @@ margin-top: 20px;
      
      
 }
-
+@media (min-width: 1600px) {
+    .item.item-1 {
+        width: 1045px
+    }
+}

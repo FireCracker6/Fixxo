@@ -11,7 +11,7 @@ function navbar() {
     <nav className="__navbar">
       <div className="container ">
         <div className='mobileDropDown'> <MobileDropdown /> </div>
-   <a href="#"><img src={Logo} alt="" /></a> 
+   <a href="#"><img src={Logo} alt="Fixxo." /></a> 
     <div className='__navbarmain'><NavBarMain /></div>
    <div> <CustomerLinks /></div>
       

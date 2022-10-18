@@ -5,7 +5,7 @@ function ShowcaseBanner() {
   return (
 <>
         <div className='sale-banner'>
-        <h1><strong style={{ whiteSpace: "pre-line" }}>{"SALE UP <br/>To 50% OFF".split("<br/>").join("\n")}</strong> </h1>
+        <h1><strong>SALE UP <br/>To 50% OFF</strong> </h1>
        
            
              <p>Online shopping free home delivery over $100</p>

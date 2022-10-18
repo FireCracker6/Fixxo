@@ -6,12 +6,13 @@
     justify-content: center;
     margin-bottom: 60px;
 
+
   
     h1 strong {
         display: block;
-            font-size: 0.8rem;
-            font-weight: 800;
-            font-family: $font-poppins;
+            font-size:1.5rem;
+            font-weight:$font-weight-extra-bold;
+           font-family: 'Poppins', sans-serif;;
             text-align: center;
         
           white-space: "pre-line";
@@ -30,8 +31,16 @@
         
         }
 }
+.top-banner-btn {
+  display: flex;
+  width: 100%;
 
-@media (min-width: 1600px) {
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (min-width: 1200px) {
 
   .sale-banner h1 strong {
     display: inline-flex;
