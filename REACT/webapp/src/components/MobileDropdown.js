@@ -13,16 +13,16 @@ function MobileDropdown() {
        <i className="fas fa-bars"></i>
        </Dropdown.Toggle>
        <Dropdown.Menu>
-         <Dropdown.Item href="#">
+         <Dropdown.Item href="/">
           Home
          </Dropdown.Item>
-         <Dropdown.Item href="#">
+         <Dropdown.Item href="/categories">
            Categories
          </Dropdown.Item>
-         <Dropdown.Item href="#">
+         <Dropdown.Item href="/productdetails">
            Products
          </Dropdown.Item>
-         <Dropdown.Item href="#">
+         <Dropdown.Item href="/contacts">
            Contacts
          </Dropdown.Item>
        </Dropdown.Menu>
