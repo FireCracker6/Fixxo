@@ -1,4 +1,5 @@
 import React from 'react'
+import WhiteButton from './WhiteButton'
 
 function SpecialOffer2() {
   return (
@@ -7,7 +8,7 @@ function SpecialOffer2() {
     <div className="special-offer-banner-1">
     <div className="item-1">
           <h2>2 FOR USD $29</h2>
-          <div className="buttons "> <a href="#" className="white-button btn-border-white">FLASH SALE</a></div>   
+          <WhiteButton link="/productdetails"  text="FLASH SALE" />
       </div>
       </div>
       </div>

@@ -4,31 +4,35 @@
  .white-button {
  
 
-    display: block;
-     height: 60px;
-     width: 188px;
-     background: $color-white;
-     position: relative;
-    
-    
-     text-align: center;
-     align-self: center;
+   
+    background-color: $color-white;
+        display: block;
+         height: 60px;
+         width: 188px;
+        align-items: center;
+              position: relative;
      
-    
-    
-     padding: 3px;
-     color: $color-dark;
-     text-align: center;
-     font-family: $font-poppins;
-     font-size: 1rem;
-     font-weight: $font-weight-medium;
-     padding-top: 18px;
-     
-     }
-    a.white-button {
-     text-decoration: none;
-    }
-    a.white-button:hover {
-        background-color: $color-dark;
-        color:$color-red-0;
-    }
+         padding: 3px;
+         color: $color-dark;
+         text-align: center;    
+         font-family: $font-poppins;
+         font-size: 1rem;
+         font-weight: $font-weight-medium;
+         padding-top: 18px;
+         a {
+            text-decoration: none;
+           }
+         }
+        a.white-button {
+         text-decoration: none;
+        }
+        a.white-button:hover {
+            background-color: $color-dark;
+            color:#fff;
+            transition: 0.2s ease-in-out;;
+        }
+        a.__btn-background.active {
+            background-color: $color-dark;
+            color:$color-red-0;
+            transition: 0.2s ease-in-out;;
+        } 

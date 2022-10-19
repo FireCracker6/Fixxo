@@ -14,7 +14,8 @@ function ProductsFlash() {
           
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem apriam eaque ipsa quae ab illo inventore.</p>
            
-            <BlackButton />
+            <BlackButton link="/productdetails" text="SHOP NOW" />
+          
          
         </div>
         
@@ -23,7 +24,7 @@ function ProductsFlash() {
             <div className="prod-text">
                  <h2><strong>New<br/>Arrivals</strong></h2>
             
-                 <BlackButton />
+                 <BlackButton link="/productdetails" text="SHOP NOW" />
            </div>
         </div>
     </div>

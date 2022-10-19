@@ -1,8 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-function BlackButton() {
+const BlackButton = ({link, text}) => {
   return (
-    <div className="buttons"> <a href="#" className="black-button btn-border">SHOP NOW!</a></div> 
+    <div className='buttons'>
+
+  <NavLink className=" black-button btn-border " to={link}>  
+
+   {text}
+    </NavLink>
+   </div>
   )
 }
 

@@ -9,7 +9,7 @@ function ShowcaseBanner() {
        
            
              <p>Online shopping free home delivery over $100</p>
-             <div className='top-banner-btn'> <RedButton /> </div>
+             <div className='top-banner-btn'> <RedButton link="/productdetails" text="SHOP NOW!" /> </div>
             </div>
     
             </>

@@ -9,7 +9,7 @@ function SpecialOffer1() {
         <div className="item-1">
             <h2>2 FOR USD $29</h2>
          
-            <WhiteButton />
+            <WhiteButton link="/productdetails"  text="FLASH SALE" />
         </div>
         <div className="item-2">
             </div>

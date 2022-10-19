@@ -18,5 +18,9 @@
         }
         a:hover {
             color: $color-red-0;
+            text-decoration: none;
+        }
+        a:active {
+          background-color: blue;
         }
 }

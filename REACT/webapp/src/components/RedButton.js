@@ -1,12 +1,21 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { NavLink } from 'react-router-dom'
 
-function RedButton(props) {
+const RedButton = ({link, text}) => {
   return (
-    <div><a href="#" className="mobile-red-button btn-mobile-border">SHOP NOW!</a> </div>
+    // <div><a href="#" className="mobile-red-button btn-mobile-border">SHOP NOW!</a> </div>
+
+    <div className='buttons'>
+
+  <NavLink className=" mobile-red-button btn-mobile-border " to={link}>  
+
+   {text}
+    </NavLink>
+   </div>
+  
   )
 }
 
-RedButton.propTypes = {}
+
 
 export default RedButton

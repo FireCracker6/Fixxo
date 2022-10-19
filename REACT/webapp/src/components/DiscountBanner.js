@@ -10,7 +10,7 @@ function DiscountBanner() {
         <h2>Up to 70% off*</h2>
         <h3>Women's, Men's & Kids' Winter Fashion</h3>
          
-        <WhiteButton />
+        <WhiteButton link="/productdetails"  text="FLASH SALE" />
     </div>
     </div>
     </div>

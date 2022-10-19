@@ -16,7 +16,7 @@ function PamelaReif(props) {
 
                       </h2>
                      
-                      <BlackButton />
+                      <BlackButton link="/productdetails" text="SHOP NOW" />
                   </div>
                   <div className="pamela-img"></div>
                   </div>
@@ -25,8 +25,9 @@ function PamelaReif(props) {
                           <h2>
                              <strong>Let's Be <br/>Conscious</strong>
                           </h2>
-                         
-                          <WhiteButton link="/search" text="TEST" />
+                         <div className='buttons'>
+                          <WhiteButton link="/productdetails"  text="FLASH SALE" />
+                          </div>
                       </div>
                   </div>
               </div>

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const MainMenuIcon = ({link, icon}) => {
   return (
    
-    <NavLink className=" __btn-background" to={link}>
+    <NavLink className=" __btn-background" to={link} end>
         <i className={icon}></i>
     </NavLink>
   

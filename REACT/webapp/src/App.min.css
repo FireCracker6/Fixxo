@@ -247,6 +247,9 @@ body {
 .__ulinks a:hover {
   color: #FF7373;
 }
+.__ulinks .active {
+  color: #FF7373;
+}
 
 /* @import "../breakpoints"; */
 * {
@@ -1165,13 +1168,12 @@ a.logoType:hover {
   }
 }
 .white-button {
+  background-color: #FFFFFF;
   display: block;
   height: 60px;
   width: 188px;
-  background: #FFFFFF;
+  align-items: center;
   position: relative;
-  text-align: center;
-  align-self: center;
   padding: 3px;
   color: #080C24;
   text-align: center;
@@ -1180,6 +1182,9 @@ a.logoType:hover {
   font-weight: 600;
   padding-top: 18px;
 }
+.white-button a {
+  text-decoration: none;
+}
 
 a.white-button {
   text-decoration: none;
@@ -1187,7 +1192,14 @@ a.white-button {
 
 a.white-button:hover {
   background-color: #080C24;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+a.__btn-background.active {
+  background-color: #080C24;
   color: #FF7373;
+  transition: 0.2s ease-in-out;
 }
 
 .container-fluid {
@@ -1384,7 +1396,7 @@ a.logoType:hover {
 }
 
 .item.item-1 {
-  background-image: url(/src/images/ProductBanner-Girl.png);
+  background-image: url(/src/assets/images/ProductBanner-Girl.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: contain;
@@ -1424,7 +1436,7 @@ a.logoType:hover {
 }
 
 .item.item-2 {
-  background-image: url(/src/images/ProductBanner-Male.png);
+  background-image: url(/src/assets/images/ProductBanner-Male.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: contain;
@@ -2967,6 +2979,7 @@ a.logoType:hover {
 footer {
   display: flex;
   justify-content: center;
+  /*    width: 100%; */
   align-items: center;
   height: 110px;
   background-color: #F8F8F8;
@@ -2982,13 +2995,14 @@ footer .social-media {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 2rem;
-  letter-spacing: 15px;
+  letter-spacing: 20px;
 }
 
 footer .social-media a {
   color: #080C24;
   text-decoration: none;
 }
-footer .social-media a :hover {
-  color: #7E7F80;
+footer .social-media a:hover {
+  color: #FF7373;
+  transition: 0.2 ease-in-out;
 }/*# sourceMappingURL=App.min.css.map */
