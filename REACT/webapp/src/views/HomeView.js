@@ -14,16 +14,26 @@ import SpecialOffer1 from '../components/SpecialOffer1';
 import SpecialOffer2 from '../components/SpecialOffer2';
 import Specialty from '../components/Specialty';
 import NavbarGlobal from '../components/NavbarGlobal';
+import ProductGridSection from '../components/sections/ProductGridSection';
+import TestGridCard from '../components/TestGridCard';
+
+
+
 
 
 function HomeView() {
+
+ 
   return (
     <>
+  
+
        <NavbarGlobal />
    
    <Showcase />
     <ProductsBanner />
    <FeaturedProducts />
+  <ProductGridSection /> 
    <PamelaReif />
    <Specialty />
    <SpecialOffer1 />
