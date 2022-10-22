@@ -1648,6 +1648,7 @@ a.quickview-button:hover {
   }
   .pamela-flash > .item-2 .prod-text .buttons .white-button {
     width: 188px;
+    margin-bottom: 0rem;
   }
 }
 /* @import "../breakpoints"; */
@@ -2000,7 +2001,7 @@ a.quickview-button:hover {
     align-self: center;
     width: 825px;
     margin-left: auto;
-    margin-right: 25px;
+    margin-right: 0px;
   }
   .special-offer-2 .item-1 .products-grid-wrapper {
     display: grid;
