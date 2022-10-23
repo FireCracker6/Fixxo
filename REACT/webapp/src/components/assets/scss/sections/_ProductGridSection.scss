@@ -54,7 +54,7 @@
     font-size: 1.25rem;
     border-radius: $border-radius-medium;
 
-    transition: top 0.2s ease-in-out;
+    transition:  0.2s ease-in-out;
 
 }
 .card-menu .productButton {
@@ -261,7 +261,7 @@
         width: 100%;
 
         opacity: 0.90;
-        transition: height 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
     .card .featured-image {
         height: 200px;
@@ -278,7 +278,7 @@
         
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 800px) {
          .card .featured-image {
         height: 200px;
        
@@ -310,7 +310,7 @@
  
       
         opacity: 0.90;
-        transition: height 0.02s ease-in-out;
+        transition:  0.02s ease-in-out;
     }
 .featured .container  {
 
@@ -374,8 +374,8 @@
     width: 50px;
     z-index: 1;
     margin-top: 0rem;
-    left: -9000%;
-  
+    bottom: -90000%;
+
     right: 1rem;
     list-style: none;
 
@@ -383,7 +383,7 @@
     font-size: 1.25rem;
     border-radius: $border-radius-medium;
 
-    transition: top 0.2s ease-in-out;
+    transition:  0.2s ease-in-out;
 
             .productButton {
                 background-color: $color-white;
@@ -430,15 +430,16 @@
         }
 
 
-.card-body {
+.product-grid .card >.card-body {
     text-align: center;
 
     h5 {
         font-family: $font-poppins;
-        font-size: 0.8125rem;
+        font-size: 0.9rem;
         font-weight: 600;
         letter-spacing: 2px;
         color: $color-font-featured-category;
+        margin-top: 20px;
     }
 
     h4 {
@@ -614,7 +615,7 @@
         width: 100%;
      /*    background-color: $color-theme-dark); */
         opacity: 0.90;
-        transition: height 0.3s ease-in-out;
+        transition:  0.3s ease-in-out;
     }
     .card .featured-image {
         height: 200px;
@@ -644,7 +645,7 @@
    
       
         opacity: 0.90;
-        transition: height 0.02s ease-in-out;
+        transition:  0.02s ease-in-out;
     }
 .featured .container  {
 

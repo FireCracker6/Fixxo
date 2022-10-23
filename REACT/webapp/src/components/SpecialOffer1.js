@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { ProductCard } from './ProductCard'
-import TestGridCard from './TestGridCard';
+import MobileGridCard from './MobileGridCard'
 import WhiteButton from './WhiteButton'
 
 const SpecialOffer1 =()=> {
  
 
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 900;
+      const breakpoint = 1200;
+    
+      React.useEffect(() =>  {
+        window.addEventListener("resize", () => setWidth(window.innerWidth));
+      }, [] );
 
-  React.useEffect(() =>  {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, [] );
   return width < breakpoint ? 
   <div className="container-fluid">
 
@@ -28,11 +29,13 @@ const SpecialOffer1 =()=> {
             
             <div className="item-2">
                     
-                <div className="products-grid-wrapper">
-
-                  <TestGridCard />
-              
-                </div>
+            <div className="products-grid-wrapper"> 
+               {/*  <div className="container mx-auto w-100 d-flex justify-content-center align-items-center"> */}
+                  <MobileGridCard />
+                  <MobileGridCard />
+               
+                 {/*  </div> */}
+                </div> 
             </div>
                     
           

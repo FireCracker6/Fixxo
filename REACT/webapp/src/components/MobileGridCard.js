@@ -3,7 +3,7 @@ import placeholderMOBILE from './assets/images/featured-product/placeholder-MOBI
 
 import { NavLink } from 'react-router-dom'
 
-const TestGridCard = () => {
+const MobileGridCard = () => {
 
     const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 600;
@@ -16,7 +16,7 @@ const TestGridCard = () => {
   
   <section classNameName="mobile-card">
         <div className="container-fluid">
-            <div className="container-md">
+            <div className="container-md ">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div className="col">
                         <div className="card">
@@ -25,9 +25,9 @@ const TestGridCard = () => {
                             </div> 
 
                                 <ul className="card-menu ">
-                                        <li><button className='productButton'><i className="fa-light fa-heart "></i></button></li>    
-                                        <li><button className='productButton' ><i className="fa-light fa-code-compare fa-flip-vertical"></i></button></li>
-                                        <li><button className='productButton'><i className="fa-light fa-bag-shopping"></i></button></li>
+                                <li><button className='productButton'><i className="fa-light fa-heart "></i></button></li>
+                                <li><button className='productButton' ><i className="fa-light fa-code-compare fa-flip-vertical"></i></button></li>
+                                <li><button className='productButton'><i className="fa-light fa-bag-shopping"></i></button></li>
                                 </ul>
                                 <div className="quickview-buttons"> <NavLink to="/productdetails" className="quickview-button quick-btn-border">QUICK VIEW</NavLink>
                                 </div>   
@@ -178,4 +178,4 @@ const TestGridCard = () => {
 
 }
 
-export default TestGridCard
+export default MobileGridCard

@@ -657,12 +657,6 @@ a.black-button:hover {
   border-right: 2px solid #fff;
 }
 
-.btn-border:hover::after {
-  /*   border-bottom: 2px solid #000000;
-    border-right: 2px solid #000000; 
-    transition: 0.2s ease-in-out;; */
-}
-
 .btn-border::before {
   display: block;
   content: "";
@@ -938,7 +932,7 @@ a.__btn-background.active {
   padding: 0.85rem;
   font-size: 1.25rem;
   border-radius: 25px;
-  transition: top 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .card-menu .productButton {
@@ -1142,7 +1136,7 @@ a.quickview-button:hover {
   top: 0;
   width: 100%;
   opacity: 0.9;
-  transition: height 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .card .featured-image {
@@ -1161,7 +1155,7 @@ a.quickview-button:hover {
      object-position: top 10px left 20px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .card .featured-image {
     height: 200px;
   }
@@ -1190,7 +1184,7 @@ a.quickview-button:hover {
   top: 0;
   width: 100%;
   opacity: 0.9;
-  transition: height 0.02s ease-in-out;
+  transition: 0.02s ease-in-out;
 }
 
 .featured .container {
@@ -1233,13 +1227,13 @@ a.quickview-button:hover {
     width: 50px;
     z-index: 1;
     margin-top: 0rem;
-    left: -9000%;
+    bottom: -90000%;
     right: 1rem;
     list-style: none;
     padding: 0.85rem;
     font-size: 1.25rem;
     border-radius: 25px;
-    transition: top 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
   .card-menu .productButton {
     background-color: #FFFFFF;
@@ -1277,32 +1271,33 @@ a.quickview-button:hover {
     left: 188px;
     transition: 0.05s ease-in-out;
   }
-  .card-body {
+  .product-grid .card > .card-body {
     text-align: center;
   }
-  .card-body h5 {
+  .product-grid .card > .card-body h5 {
     font-family: "Poppin", sans-serif;
-    font-size: 0.8125rem;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 2px;
     color: #616365;
+    margin-top: 20px;
   }
-  .card-body h4 {
+  .product-grid .card > .card-body h4 {
     font-family: "Poppin", sans-serif;
     font-size: 0.925rem;
     font-weight: 800;
     letter-spacing: 2px;
     color: #616365;
   }
-  .card-body .text-theme {
+  .product-grid .card > .card-body .text-theme {
     color: #FF7373;
   }
-  .card-body .price {
+  .product-grid .card > .card-body .price {
     margin-top: 0.3rem;
     display: flex;
     justify-content: center;
   }
-  .card-body .price .old-price {
+  .product-grid .card > .card-body .price .old-price {
     font-size: 1.125rem;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -1310,7 +1305,7 @@ a.quickview-button:hover {
     padding-right: 0.5rem;
     display: none;
   }
-  .card-body .price .new-price {
+  .product-grid .card > .card-body .price .new-price {
     font-size: 1.125rem;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -1427,7 +1422,7 @@ a.quickview-button:hover {
     width: 100%;
     /*    background-color: $color-theme-dark); */
     opacity: 0.9;
-    transition: height 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
   .card .featured-image {
     height: 200px;
@@ -1453,7 +1448,7 @@ a.quickview-button:hover {
     top: 0;
     width: 100%;
     opacity: 0.9;
-    transition: height 0.02s ease-in-out;
+    transition: 0.02s ease-in-out;
   }
   .featured .container {
     display: flex;
@@ -1651,6 +1646,26 @@ a.quickview-button:hover {
     margin-bottom: 0rem;
   }
 }
+@media (min-width: 768px) {
+  .pamela-flash > .item-2 .prod-text .buttons {
+    justify-content: flex-center;
+    width: 100%;
+    padding-bottom: 0rem;
+  }
+  .pamela-flash > .item-2 .prod-text .buttons .white-button {
+    width: 30%;
+    margin-bottom: 3rem;
+  }
+  .pamela-flash > .item-1 .pamela-text .buttons {
+    justify-content: flex-center;
+    width: 100%;
+    padding-bottom: 0rem;
+  }
+  .pamela-flash > .item-1 .pamela-text .buttons .black-button {
+    width: 30%;
+    margin-bottom: 3rem;
+  }
+}
 /* @import "../breakpoints"; */
 .specialty-items {
   display: grid;
@@ -1839,24 +1854,20 @@ a.quickview-button:hover {
 
 .special-offer-1 .item-2 {
   grid-row: 2/2;
-  display: block;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  padding-right: 30px;
+  /*    padding-right: 30px; */
 }
 .special-offer-1 .item-2 .products-grid-wrapper {
-  display: block;
-  justify-content: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
-  width: 100%;
+  display: inline-block;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .special-offer-1 .item-1 h2 {
@@ -1892,6 +1903,8 @@ a.quickview-button:hover {
     align-items: flex-start;
     align-self: center;
     width: 825px;
+    margin-top: 0;
+    margin-left: 30px;
   }
   .special-offer-1 .item-2 .products-grid-wrapper {
     display: grid;
@@ -1900,6 +1913,7 @@ a.quickview-button:hover {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
     width: auto;
+    /*   margin-left: 30px; */
   }
   .special-offer-1 .item-1 h2 {
     font-size: 2.8125rem;
@@ -1956,14 +1970,11 @@ a.quickview-button:hover {
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding-right: 30px;
 }
 .special-offer-2 .item-1 .products-grid-wrapper {
-  display: block;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -2002,6 +2013,7 @@ a.quickview-button:hover {
     width: 825px;
     margin-left: auto;
     margin-right: 0px;
+    margin-top: 0;
   }
   .special-offer-2 .item-1 .products-grid-wrapper {
     display: grid;
@@ -2010,6 +2022,7 @@ a.quickview-button:hover {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
     width: auto;
+    margin-right: 30px;
   }
   .special-offer-2 .item-2 h2 {
     font-size: 2.8125rem;
@@ -2029,7 +2042,6 @@ a.quickview-button:hover {
 .discount {
   justify-content: center;
 }
-
 .discount > .container {
   align-items: center;
   justify-content: center;
@@ -2044,7 +2056,6 @@ a.quickview-button:hover {
   background-color: #7E7F80;
   width: 100%;
 }
-
 .discount-banner > .info {
   justify-content: center;
   align-items: center;
@@ -2054,19 +2065,16 @@ a.quickview-button:hover {
   background-color: #7E7F80;
   text-align: center;
 }
-
 .discount-banner > .info h2 {
   font-size: 2.8125rem;
   font-weight: 800;
   color: #FFFFFF;
 }
-
 .discount-banner > .info h3 {
   font-size: 1rem;
   font-weight: 800;
   color: #FFFFFF;
 }
-
 .discount-banner > .info .buttons {
   display: flex;
   width: 100%;
@@ -2118,6 +2126,538 @@ a.quickview-button:hover {
   }
   .discount-banner > .info .buttons .white-button {
     width: 188px;
+  }
+}
+.product-spinner {
+  display: flex;
+  align-items: center;
+}
+
+.product-spinner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.product-spinner-grid {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "main main main" "main main main";
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  row-gap: 1.5rem;
+  /*   background-color: #2196F3;  */
+  /*  border: 1px solid black; */
+  grid-auto-flow: column;
+  max-width: 100%;
+}
+.product-spinner-grid .main {
+  /*   grid-area: main; */
+  margin-bottom: 0;
+}
+
+.product-spinner-grid-header {
+  width: 100%;
+  grid-area: header;
+  height: 28px;
+}
+
+.product-spinner-grid-main {
+  grid-area: main;
+}
+
+.product-spinner-grid h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+/* discount card */
+.discount.card {
+  border: none;
+  height: 132px;
+}
+
+.discount.card .card-menu {
+  position: absolute;
+  width: 50px;
+  z-index: 1;
+  margin-top: -0.5rem;
+  overflow: hidden;
+  left: -9000%;
+  top: 0;
+  right: 1rem;
+  list-style: none;
+  /* center aligining the menu tested in edge, opera, safari */
+  padding: 0.85rem;
+  font-size: 1.25rem;
+  border-radius: 25px;
+  /*   background-color: $color-white); */
+  transition: 0.1s ease-in-out;
+}
+
+.discount.card:hover .card-menu {
+  display: block;
+  left: 100px;
+}
+
+.discount.card .fa-stack.small {
+  font-size: 0.5em;
+}
+
+i {
+  vertical-align: middle;
+}
+
+.discount.card .card-body {
+  text-align: left;
+  margin-top: -4%;
+  margin-left: 20%;
+}
+
+.discount.card .card-body h5 {
+  font-family: "Poppin", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #616365;
+}
+
+.discount.card .card-body h4 {
+  font-family: "Poppin", sans-serif;
+  font-size: 0.925rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #616365;
+}
+
+.discount.card > .card-body .text-theme {
+  color: #FF7373;
+}
+
+.discount.card .card-body .price {
+  margin-top: 0.3rem;
+  display: block;
+  text-align: left;
+}
+
+.discount.card-body .price .old-price {
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-decoration: line-through;
+  padding-right: 0.5rem;
+  display: none;
+}
+
+.discount.card > .card-body .price .new-price {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.discount.card > .quickview-buttons {
+  position: absolute;
+  top: -9000%;
+}
+
+.discount.card:hover > .quickview-buttons {
+  position: absolute;
+  top: 41%;
+}
+
+.discount.card:hover {
+  overflow: hidden;
+}
+
+.discount.card .quickview-button {
+  display: none;
+  height: 50px;
+  width: 255px;
+  background: #FF7373;
+  position: relative;
+  text-align: center;
+  align-self: center;
+  margin-top: 200px;
+  padding: 3px;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppin", sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 3.2px;
+  font-weight: 400;
+  padding-top: 15px;
+  z-index: 2;
+}
+
+a.discount.card > .quickview-button {
+  text-decoration: none;
+  font-stretch: 300%;
+}
+
+a.discount > .quickview-button:hover {
+  background-color: #222529;
+  color: #FF7373;
+}
+
+.discount.card {
+  display: flex;
+  position: relative;
+}
+
+.discount.card .card-menu li a {
+  background-color: white;
+  margin-bottom: 0.2rem;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.06);
+  align-items: center;
+  line-height: 1.7rem;
+  text-align: center;
+  position: relative;
+  font-size: 0.7rem;
+  color: #080C24;
+}
+
+.discount.card .card-menu li a:hover {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #080C24;
+}
+
+.discount.card .card-background {
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  top: 75px;
+  width: 100%;
+  /*    background-color: $color-theme-dark); */
+  opacity: 0.9;
+  transition: height 0.3s ease-in-out;
+}
+
+.discount-image {
+  display: inline-block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.3;
+}
+
+.discount.card .card-background .discount-image-dark {
+  display: none;
+}
+
+.discount.card:hover .card-background .discount-image-dark {
+  display: block;
+}
+
+.discount.card:hover .card-background {
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  top: 0;
+  width: 100%;
+  /*  background-color: $color-theme-dark); */
+  opacity: 0.9;
+  transition: height 0.02s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+  .product-spinner {
+    display: flex;
+    align-items: center;
+  }
+  .product-spinner .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .product-spinner-grid {
+    display: grid;
+    grid-template-areas: "header header header" "main main main" "main main main" "main main main";
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    row-gap: 1.5rem;
+    /*     background-color: #2196F3; */
+    grid-template-columns: 365px 365px 365px;
+    grid-template-rows: 28px 132px 132px 132px;
+    grid-auto-flow: column;
+    max-width: 100%;
+  }
+  .product-spinner-grid-header {
+    width: 100%;
+    grid-area: header;
+    height: 28px;
+  }
+  .product-spinner-grid-main {
+    grid-area: main;
+  }
+  .product-spinner-grid h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+  /* discount card */
+  .discount.card {
+    border: none;
+    height: 132px;
+  }
+  .discount.card .card-menu {
+    position: absolute;
+    width: 50px;
+    z-index: 1;
+    margin-top: -0.5rem;
+    overflow: hidden;
+    top: -9000%;
+    top: 0;
+    right: 1rem;
+    list-style: none;
+    /* center aligining the menu tested in edge, opera, safari */
+    padding: 0.85rem;
+    font-size: 1.25rem;
+    border-radius: 25px;
+    /*   background-color: $color-white); */
+    transition: 0.1s ease-in-out;
+  }
+  .discount.card:hover .card-menu {
+    display: block;
+    left: 100px;
+  }
+  .discount.card .fa-stack.small {
+    font-size: 0.5em;
+  }
+  i {
+    vertical-align: middle;
+  }
+  .discount.card .card-body {
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 20%;
+  }
+  .discount.card > .card-body {
+    text-align: left;
+    margin-top: -4%;
+    margin-left: 20%;
+  }
+  .discount.card > .card-body h5 {
+    font-family: "Poppin", sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #616365;
+  }
+  .discount.card .card-body h4 {
+    font-family: "Poppin", sans-serif;
+    font-size: 0.925rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #616365;
+  }
+  .discount.card > .card-body .text-theme {
+    color: #FF7373;
+  }
+  .discount.card .card-body .price {
+    margin-top: 0.3rem;
+    display: block;
+    text-align: left;
+  }
+  .discount.card-body .price .old-price {
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-decoration: line-through;
+    padding-right: 0.5rem;
+    display: none;
+  }
+  .discount.card > .card-body .price .new-price {
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .discount.card > .quickview-buttons {
+    position: absolute;
+    top: -9000%;
+  }
+  .discount.card:hover > .quickview-buttons {
+    position: absolute;
+    top: 41%;
+  }
+  .discount.card:hover {
+    overflow: hidden;
+  }
+  .discount.card .quickview-button {
+    display: none;
+    height: 50px;
+    width: 255px;
+    background: #FF7373;
+    position: relative;
+    text-align: center;
+    align-self: center;
+    margin-top: 200px;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    font-family: "Poppin", sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 3.2px;
+    font-weight: 400;
+    padding-top: 15px;
+    z-index: 2;
+  }
+  a.discount.card > .quickview-button {
+    text-decoration: none;
+    font-stretch: 300%;
+  }
+  a.discount > .quickview-button:hover {
+    background-color: #222529;
+    color: #FF7373;
+  }
+  .discount.card {
+    display: flex;
+    text-align: left;
+    margin-top: -4%;
+    margin-left: 0;
+    padding-bottom: 50px;
+  }
+  .discount.card .card-menu li a {
+    background-color: white;
+    margin-bottom: 0.2rem;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.06);
+    align-items: center;
+    line-height: 1.7rem;
+    text-align: center;
+    position: relative;
+    font-size: 0.7rem;
+    color: #080C24;
+  }
+  .discount.card .card-menu li a:hover {
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #080C24;
+  }
+  .discount.card .card-background {
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    top: 0;
+    width: 100%;
+    /*    background-color: var(--color-theme-dark); */
+    opacity: 0.9;
+    transition: height 0.3s ease-in-out;
+  }
+  .discount.card .discount-image {
+    display: grid;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+  }
+  .discount.card .card-background .discount-image-dark {
+    display: none;
+  }
+  .discount.card:hover .card-background .discount-image-dark {
+    display: block;
+  }
+  .discount.card:hover .card-background {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    top: 0;
+    width: 100%;
+    /*  background-color: var(--color-theme-dark); */
+    opacity: 0.9;
+    transition: height 0.02s ease-in-out;
+  }
+}
+@media (max-width: 600px) {
+  .product-spinner {
+    display: flex;
+    align-items: center;
+  }
+  .product-spinner .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .product-spinner-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    -moz-column-gap: 2.1rem;
+         column-gap: 2.1rem;
+    width: 100%;
+    /*     background-color: #2196F3; */
+  }
+  .product-spinner-grid .main {
+    /*   grid-area: main; */
+    margin-bottom: 150px;
+  }
+  /*   .discount.card  {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .discount.card .header h2 {
+      margin-bottom: 50px;
+    }
+   */
+  .discount-image {
+    display: block;
+    -o-object-fit: contain;
+       object-fit: contain;
+    opacity: 0.2;
+  }
+  .discount.card .card-menu {
+    position: absolute;
+    width: 50px;
+    z-index: 1;
+    margin-top: -0.5rem;
+    overflow: hidden;
+    left: -9000%;
+    top: -75px;
+    right: 1rem;
+    list-style: none;
+    /* center aligining the menu tested in edge, opera, safari */
+    padding: 0.85rem;
+    font-size: 1.25rem;
+    border-radius: 25px;
+    /*   background-color: $color-white); */
+    transition: 0.1s ease-in-out;
+  }
+  .discount.card:hover .card-menu {
+    display: block;
+    left: 100px;
+  }
+  .discount.card .card-background {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    transition: height 0.3s ease-in-out;
+  }
+  .discount.card .card-background .discount-image-dark {
+    display: none;
+    position: absolute;
+    top: -75px;
+  }
+  .discount.card:hover .card-background .discount-image-dark {
+    display: block;
+    position: absolute;
+    top: -75px;
+  }
+  .discount.card:hover {
+    overflow: visible;
   }
 }
 .home-footer {

@@ -39,22 +39,27 @@
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding-right: 30px;
+
 
     
   
 
     .products-grid-wrapper {
+   
+      
+        display: inline-block;
   
- 
-        display: block;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 2rem;
-        width: 100%;
-
-     
-    }
+        justify-content: space-between;
+        align-items: center;
+        
+       
+           width: 100%;
+         
+    
+          
+    
+        }
+        
    
 }
 
@@ -96,17 +101,19 @@
         width: 825px;
         margin-left: auto;
         margin-right: 0px;
+        margin-top: 0;
     
       
         
       
     
-        .products-grid-wrapper {
+       .products-grid-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             column-gap: 2rem;
             width: auto;
+            margin-right: 30px;
          
         }
        

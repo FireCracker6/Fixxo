@@ -244,3 +244,29 @@
 
     }
 }
+@media (min-width: 768px ) {
+    
+    .pamela-flash > .item-2 .prod-text .buttons {
+        justify-content:flex-center;
+        width: 100%;
+        padding-bottom: 0rem;
+      
+        .white-button {
+            
+            width: 30%;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .pamela-flash > .item-1 .pamela-text .buttons {
+        justify-content:flex-center;
+        width: 100%;
+        padding-bottom: 0rem;
+      
+        .black-button {
+            
+            width: 30%;
+            margin-bottom: 3rem;
+        }
+    }
+}

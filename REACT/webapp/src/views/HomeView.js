@@ -15,7 +15,8 @@ import SpecialOffer2 from '../components/SpecialOffer2';
 import Specialty from '../components/Specialty';
 import NavbarGlobal from '../components/NavbarGlobal';
 import ProductGridSection from '../components/sections/ProductGridSection';
-import TestGridCard from '../components/TestGridCard';
+
+import ProductSpinner from '../components/ProductSpinner';
 
 
 
@@ -39,6 +40,7 @@ function HomeView() {
    <SpecialOffer1 />
    <SpecialOffer2 />
    <DiscountBanner />
+   <ProductSpinner />
    <HomeFooter />
    <Footer />
    {/* <div style={{"height": "5000px"}}></div> */}

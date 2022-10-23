@@ -1,13 +1,13 @@
 import React from 'react'
 import WhiteButton from './WhiteButton'
 import { ProductCard } from './ProductCard'
-import TestGridCard from './TestGridCard'
+import MobileGridCard from './MobileGridCard'
 
 const SpecialOffer2 = () => {
 
 
       const [width, setWidth] = React.useState(window.innerWidth);
-      const breakpoint = 900;
+      const breakpoint = 1200;
     
       React.useEffect(() =>  {
         window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -25,11 +25,12 @@ const SpecialOffer2 = () => {
                   </div>
                   </div>
             
-                  <div className="item-1">
+                  <div className="item-1 ">
                         
-                        <div className="products-grid-wrapper">
+                        <div className="products-grid-wrapper ">
 
-                        <TestGridCard />
+                        <MobileGridCard />
+                        <MobileGridCard />
                         </div>
 
                   </div>
