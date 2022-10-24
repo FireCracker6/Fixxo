@@ -6,6 +6,11 @@
   border: 1px solid black;
 }
 
+.disc-card .grid-wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 1fr 1fr;
+}
+
 .disc-card .card img {
   width: 160px;
   height: 132px;
@@ -67,7 +72,7 @@
 
 .disc-card .card:hover .card-menu {
   display: block;
-  left: 100px;
+  left: 90px;
   width: 100px;
 }
 
@@ -92,4 +97,18 @@
 .disc-card .card-menu .productButton:hover {
   background-color: black;
   color: white;
+}
+
+@media (min-width: 300px) {
+  .disc-card .grid-wrapper .item-3 {
+    display: none;
+  }
+  .disc-card .card .card-menu {
+    left: 90px;
+  }
+}
+@media (min-width: 1600px) {
+  .disc-card .grid-wrapper .item-3 {
+    display: grid;
+  }
 }/*# sourceMappingURL=DiscountCard2.min.css.map */
