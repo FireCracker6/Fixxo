@@ -17,6 +17,8 @@ import NavbarGlobal from '../components/NavbarGlobal';
 import ProductGridSection from '../components/sections/ProductGridSection';
 
 import ProductSpinner from '../components/ProductSpinner';
+import DiscountMobileProducts from '../components/sections/DiscountMobileProducts';
+import DiscountCard2 from '../components/DiscountCardSection';
 
 
 
@@ -40,7 +42,9 @@ function HomeView() {
    <SpecialOffer1 />
    <SpecialOffer2 />
    <DiscountBanner />
-   <ProductSpinner />
+{/*    <ProductSpinner /> */}
+   <DiscountCard2 />
+
    <HomeFooter />
    <Footer />
    {/* <div style={{"height": "5000px"}}></div> */}

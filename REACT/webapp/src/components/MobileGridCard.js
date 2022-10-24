@@ -53,39 +53,7 @@ const MobileGridCard = () => {
                     </div>
 
 
-                    <div className="col">
-                        <div className="card">
-                        
-                            <div className="featured-image"><img src={placeholderMOBILE}  alt="placeholder image" />
-                            </div> 
-
-                                <ul className="card-menu ">
-                                        <li><button className='productButton'><i className="fa-light fa-heart "></i></button></li>    
-                                        <li><button className='productButton' ><i className="fa-light fa-code-compare fa-flip-vertical"></i></button></li>
-                                        <li><button className='productButton'><i className="fa-light fa-bag-shopping"></i></button></li>
-                                </ul>
-                                <div className="quickview-buttons"> <NavLink to="/productdetails" className="quickview-button quick-btn-border">QUICK VIEW</NavLink>
-                                </div>   
-                            
-                                <div className="card-background">  </div>
-
-                                <div className="card-body">
-                                        <h5 className="card-title">Category</h5>
-                                        <h4>Modern Black Blouse</h4>
-                                            <div className="text-theme">
-                                                <i className="fa-solid fa-star-sharp"></i>
-                                                <i className="fa-solid fa-star-sharp"></i>
-                                                <i className="fa-solid fa-star-sharp"></i>
-                                                <i className="fa-solid fa-star-sharp"></i>
-                                                <i className="fa-solid fa-star-sharp"></i>
-                                            </div>
-                                        <div className="price">
-                                            <p className="old-price">$35.00</p>
-                                            <p className="new-price">$35.00</p>
-                                        </div>
-                                </div>
-                        </div>
-                    </div>
+     
                 </div>
 
             </div>
@@ -99,7 +67,7 @@ const MobileGridCard = () => {
 
   
 
-        <div className="row row-cols-2 row-cols-md-2 g-4">
+        <div className="row row-cols-2 row-cols-sm-2  g-4  row-cols-md-2 g-4  row-cols-4 row-cols-xl-4  g-4">
             <div className="col">
             <div className="card">
             

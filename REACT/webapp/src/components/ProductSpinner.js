@@ -15,7 +15,7 @@ for (let i = 0; i < dcard.length; i++) {
 const ProductSpinner = () => {
 
   const [width, setWidth] = React.useState(window.innerWidth);
-      const breakpoint = 1200;
+      const breakpoint = 1179;
     
       React.useEffect(() =>  {
         window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -36,8 +36,9 @@ const ProductSpinner = () => {
               {items}
 
           
-             
-             
+              <div className="header"><h2 className="topRated">Top Rated Product</h2></div>
+              {items}
+
               </div>
               </div>
               </section> :     

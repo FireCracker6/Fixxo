@@ -1,6 +1,7 @@
 import React from 'react'
 import horizontalPlaceHolderImg from './assets/images/horizontal-product-img-bg.svg'
 import horizontalPlaceHolderImgDark from './assets/images/horizontal-product-img-dark.svg' 
+import yogaMobile from './assets/images/featured-product/yoga.png'
 
 function DiscountCard() {
   return (
@@ -8,10 +9,10 @@ function DiscountCard() {
     <div className="main">
     <div className="discount-product">
     
-    <div className="discount card mb-3" >
+    <div className="discount card" >
         <div className="row g-0">
-          <div className="col-md-4">
-            <div className="discount-image"><img src={horizontalPlaceHolderImgDark}  alt="placeholder image" />
+          <div className="col-md-">
+            <div className="discount-image"><img src={yogaMobile}  alt="placeholder image" />
             </div> 
              <ul className="card-menu ">
                  <li><a href="#" className="arrowlink-favorite"><i className="fa-light fa-heart "></i></a></li>
