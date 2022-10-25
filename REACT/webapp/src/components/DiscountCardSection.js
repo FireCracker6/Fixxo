@@ -1,8 +1,9 @@
 import React from 'react'
 
 import DiscountCardMobile from './DiscountCardMobile'
+const titles = [];
 
-function DiscountCard2() {
+const DiscountCard2 = ({title1}, {title2}) => {
   return (
     
     <section className="disc-card container">

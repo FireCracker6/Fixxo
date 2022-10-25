@@ -1,9 +1,9 @@
 import React from 'react'
-import placeholderMOBILE from './assets/images/featured-product/placeholder-MOBILE.png'
+
 
 import { NavLink } from 'react-router-dom'
 
-const MobileGridCard = () => {
+const MobileGridCard = ({product}) => {
 
     const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 600;
@@ -12,16 +12,16 @@ const MobileGridCard = () => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, [] );
 
-  return width < breakpoint ?     
+  return width < breakpoint ?      
   
-  <section classNameName="mobile-card">
+  <section className="mobile-card">
         <div className="container-fluid">
             <div className="container-md ">
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div className="row row-cols-1 row-cols-md-2 g-4">
                     <div className="col">
                         <div className="card">
                         
-                            <div className="featured-image"><img src={placeholderMOBILE}  alt="placeholder image" />
+                            <div className="featured-image"><img src={product.img} alt={product.productName} />
                             </div> 
 
                                 <ul className="card-menu ">
@@ -34,9 +34,9 @@ const MobileGridCard = () => {
                             
                                 <div className="card-background">  </div>
 
-                                <div class="card-body">
-                                        <h5 className="card-title">Category</h5>
-                                        <h4>Modern Black Blouse</h4>
+                                <div className="card-body">
+                                        <h5 className="card-title">{product.category}</h5>
+                                        <h4>{product.productName} </h4>
                                             <div className="text-theme">
                                                 <i className="fa-solid fa-star-sharp"></i>
                                                 <i className="fa-solid fa-star-sharp"></i>
@@ -46,7 +46,7 @@ const MobileGridCard = () => {
                                             </div>
                                         <div className="price">
                                             <p className="old-price">$35.00</p>
-                                            <p className="new-price">$35.00</p>
+                                            <p className="new-price">{product.price}</p>
                                         </div>
                                 </div>
                         </div>
@@ -71,7 +71,7 @@ const MobileGridCard = () => {
             <div className="col">
             <div className="card">
             
-                <div className="featured-image"><img src={placeholderMOBILE}  alt="placeholder image" />
+                <div className="featured-image"><img src={product.img} alt={product.productName} />
                 </div> 
 
                     <ul className="card-menu ">
@@ -85,8 +85,8 @@ const MobileGridCard = () => {
                     <div className="card-background">  </div>
 
                     <div className="card-body">
-                            <h5 className="card-title">Category</h5>
-                            <h4>Modern Black Blouse</h4>
+                            <h5 className="card-title">{product.category}</h5>
+                            <h4>{product.productName}</h4>
                                 <div className="text-theme">
                                     <i className="fa-solid fa-star-sharp"></i>
                                     <i className="fa-solid fa-star-sharp"></i>
@@ -96,7 +96,7 @@ const MobileGridCard = () => {
                                 </div>
                             <div className="price">
                                 <p className="old-price">$35.00</p>
-                                <p className="new-price">$35.00</p>
+                                <p className="new-price">{product.price}</p>
                             </div>
                     </div>
             </div>
@@ -104,7 +104,7 @@ const MobileGridCard = () => {
             <div className="col">
             <div className="card">
             
-                <div className="featured-image"><img src={placeholderMOBILE}  alt="placeholder image" />
+                <div className="featured-image"><img src={product.img}  alt={product.productName}/>
                 </div> 
 
                     <ul className="card-menu ">
@@ -118,8 +118,8 @@ const MobileGridCard = () => {
                     <div className="card-background">  </div>
 
                     <div className="card-body">
-                            <h5 className="card-title">Category</h5>
-                            <h4>Modern Black Blouse</h4>
+                            <h5 className="card-title">{product.category}</h5>
+                            <h4>{product.productName}</h4>
                                 <div className="text-theme">
                                     <i className="fa-solid fa-star-sharp"></i>
                                     <i className="fa-solid fa-star-sharp"></i>
@@ -129,7 +129,7 @@ const MobileGridCard = () => {
                                 </div>
                             <div className="price">
                                 <p className="old-price">$35.00</p>
-                                <p className="new-price">$35.00</p>
+                                <p className="new-price">{product.price}</p>
                             </div>
                     </div>
             </div>

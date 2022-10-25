@@ -1,13 +1,13 @@
 import React from 'react'
 import WhiteButton from './WhiteButton'
 
-function DiscountBanner() {
+const DiscountBanner = ({title}) => {
   return (
     <section className="discount">
     <div className="container">
     <div className="discount-banner">
         <div className="info">
-        <h2>Up to 70% off*</h2>
+        <h2>{title}</h2>
         <h3>Women's, Men's & Kids' Winter Fashion</h3>
          
         <WhiteButton link="/productdetails"  text="FLASH SALE" />

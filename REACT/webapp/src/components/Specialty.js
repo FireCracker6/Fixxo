@@ -1,7 +1,7 @@
 import React from 'react';
 import placeHolder from './assets/images/specialty-img-bg.svg'
 
-function Specialty() {
+const Specialty = ({title}) => {
   return (
     // <!-- Specialty section -->
   
@@ -20,7 +20,7 @@ function Specialty() {
           <div className="specialty-header">
     
     <div className="section-title">
-        <h1>Our Specialty</h1>
+        <h1>{title}</h1>
       
       
       </div>

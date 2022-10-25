@@ -270,12 +270,20 @@
     }
     .card .featured-image img {
         display: grid;
-        filter: grayscale(80%);
+        filter: grayscale(50%);
         width: 300px;
         height: 190px;
-        object-fit: contain;
-        object-position: top 10px left 20px;
+        object-fit: cover;
+
         
+    }
+
+    .card:hover .card-background .featured-image-dark img {
+        filter: contrast(200%) brightness(120%) grayscale(0%);
+        display: none;
+        filter: grayscale(80%);
+        
+        object-fit: cover;
     }
 
     @media (min-width: 800px) {
@@ -289,7 +297,9 @@
     }
     }
     .card-background .featured-image-dark {
-        height: 200px;
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
         display: none;
         transition: 0.5s ease-in-out;
     }
@@ -335,6 +345,7 @@
     
  .mobile-card {
     display: none;
+    overflow: hidden;
  }
 
     .product-gallery-grid {
@@ -344,11 +355,13 @@
           max-width: 1115px;
     column-gap: 1.875rem;
     row-gap: 1.4375rem;
+    overflow: hidden;
   
      
      }
      .card {
         border: none !important;
+        overflow: hidden;
     }
 
     .product-grid {
@@ -375,7 +388,7 @@
     z-index: 1;
     margin-top: 0rem;
     bottom: -90000%;
-
+ 
     right: 1rem;
     list-style: none;
 
@@ -402,6 +415,7 @@
                 line-height: 3em;
                 margin-right: 5px;
                 margin-left: 5px;
+                overflow: hidden;
 
                 .productIcon {
                     position: absolute;
@@ -485,6 +499,7 @@
 .quickview-buttons {
     position: absolute;
     top:-9000%;
+    overflow: hidden;
 }
 .card:hover .quickview-buttons {
     position: absolute;
@@ -498,7 +513,7 @@
 
     display: block;
      height: 50px;
-     width: 255px;
+     width: 257px;
      background: $color-red-0;
      position: relative;
     
@@ -517,7 +532,8 @@
      font-weight: 400;
      padding-top: 15px;
      left: 0;
-     filter: opacity(100%);
+     bottom: 11px;
+     filter: opacity(80%);
    
      z-index: 2;
      }
@@ -625,15 +641,22 @@
     .card .featured-image img {
         display: grid;
         filter: grayscale(80%);
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: top 0 left 0;
+        width:300px;
+        height:200px;
+        object-fit: cover;
+       ;
+   
         
     }
 
-    .card:hover .featured-image-dark img {
-        filter: contrast(200%) brightness(120%) grayscale(0%);
+    .card:hover .card-background .featured-image-dark img {
+        filter: contrast(110%) brightness(120%) grayscale(0%);
+        display: grid;
+      
+        width:300px;
+        height:200px;
+        object-fit: cover;
+   
     }
 
     .card:hover .card-background {

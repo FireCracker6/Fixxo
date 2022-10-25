@@ -4,7 +4,7 @@ import placeholderImageDarkGray from './assets/images/featured-product/placehold
 import { NavLink } from 'react-router-dom'
 
 
- export const ProductCard = () => {
+ export const ProductCard = ({item}) => {
   return (
     <>
 
