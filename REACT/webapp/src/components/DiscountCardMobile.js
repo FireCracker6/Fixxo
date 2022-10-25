@@ -1,12 +1,12 @@
 import React from 'react'
-import yogaMobile from './assets/images/featured-product/yoga.png'
+import pinquin from './assets/images/featured-product/pinquin.png'
 
 function DiscountCardMobile() {
   return (
     <div className="card mb-3 " >
     <div className="row g-0">
       <div className="col-md-4">
-      <img src={yogaMobile}  alt="placeholder image" />
+      <img src={pinquin}  alt="placeholder image" />
       </div>
       <ul className="card-menu ">
         <li><button className='productButton'><i className="fa-light fa-heart "></i></button></li>

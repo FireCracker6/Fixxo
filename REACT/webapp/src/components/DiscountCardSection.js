@@ -11,7 +11,7 @@ function DiscountCard2() {
 {/*      
       <div className=" row row-cols-2 row-cols-sm-1  row-cols-md-2  row-cols-xl-3 g-4 "> */}
         
-      <div className="grid-wrapper row row-cols-2 row-cols-sm-1  row-cols-md-2 row-cols-xl-3 g-4 ">
+      <div className="grid-wrapper row row-cols-2 row-cols-sm-2  row-cols-md-2 row-cols-xl-3 g-4 ">
       <div className="item-1">
         <h4>Latest Product</h4>
        <DiscountCardMobile />

@@ -42,12 +42,10 @@ function HomeView() {
    <SpecialOffer1 />
    <SpecialOffer2 />
    <DiscountBanner />
-{/*    <ProductSpinner /> */}
    <DiscountCard2 />
-
    <HomeFooter />
    <Footer />
-   {/* <div style={{"height": "5000px"}}></div> */}
+
     </>
   )
 }
