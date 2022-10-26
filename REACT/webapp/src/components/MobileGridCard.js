@@ -62,7 +62,7 @@ const MobileGridCard = ({item}) => {
 
 <section className="mobile-card">
 <div className="container-fluid">
-<div className="container-md">
+<div className="container">
 
   
 

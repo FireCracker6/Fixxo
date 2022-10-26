@@ -19,7 +19,7 @@ const ProductGridSection = ({title, products}) => {
 
   return width < breakpoint ? <>
     <div className='section-title'><h1>{title}</h1></div>
-    <div className="container">
+    <div className="container-md ">
     <div className="row row-cols-1 row-cols-sm-2  g-4  row-cols-md-2 g-4   row-cols-xl-4  g-4">
 
               {

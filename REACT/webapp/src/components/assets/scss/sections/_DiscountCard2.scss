@@ -23,20 +23,23 @@
 }
 
 .disc-card .card {
-
-    max-width:200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width:180px;
     border: 1px solid black !important;
     margin-left: auto;
     margin-right: auto;
 
     img  {
+        
         width: 160px;
         height:132px;
         object-fit: cover;
     }
 
     .card-body {
-        width: 150px;
+        width: 100%;
         margin-left: 0;
         margin-top: -0.5rem;
         text-align: center;
