@@ -20,9 +20,7 @@
   
      
   
-     .card {
-        border: none !important;
-    }
+    
 
  .product-grid {
     width: 100%;
@@ -35,7 +33,9 @@
     
  .card {
     border: none !important;
-   
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;   
 }
 
 .card-menu {
@@ -45,17 +45,20 @@
     z-index: 1;
     margin-top: 0rem;
     top: 0;
-    left: 290px;
+    left: 230px;
 
     right: 1rem;
     list-style: none;
-  
+    opacity: 0.6;
     padding: .85rem;
     font-size: 1.25rem;
     border-radius: $border-radius-medium;
 
     transition:  0.2s ease-in-out;
 
+}
+.card-menu:hover {
+    opacity: 1;
 }
 .card-menu .productButton {
     background-color: $color-white;
@@ -145,7 +148,7 @@
 
     display: block;
      height: 40px;
-     width: 280px;
+     width: 300px;
      background: $color-red-0;
      filter: opacity(50%);
      position: relative;
@@ -155,7 +158,7 @@
      align-self: center;
      
     margin-top: 15px;;
-    left: 20px;
+ 
     
      padding: 3px;
      color: #fff;
@@ -165,7 +168,7 @@
      letter-spacing: 3.2px;
      font-weight: 400;
      padding-top: 11px;
-      filter: opacity(50%);
+  
      z-index: 2;
      }
     a.quickview-button {
@@ -270,7 +273,7 @@
     }
     .card .featured-image img {
         display: grid;
-        filter: grayscale(50%);
+        filter: grayscale(80%);
         width: 300px;
         height: 190px;
         object-fit: cover;
@@ -359,7 +362,7 @@
   
      
      }
-     .card {
+     .product-gallery-grid .card {
         border: none !important;
         overflow: hidden;
     }
@@ -376,18 +379,18 @@
 
     
 
- .card {
+    .product-grid .card {
     border: none !important;
    
 }
 
-.card-menu {
+.product-grid .card .card-menu {
     position: absolute;
  
     width: 50px;
     z-index: 1;
     margin-top: 0rem;
-    bottom: -90000%;
+    left: -90000%;
  
     right: 1rem;
     list-style: none;
@@ -427,19 +430,24 @@
         }
 
 }
+.product-grid .card-menu:hover {
+    left: 200px;
 
-        .card-menu:active .productButton{
+}
+
+.product-grid .card-menu:active .productButton{
             border: none !important;
         }
-        .card-menu button {
+        .product-grid .card-menu button {
             border: none !important;
         }
 
 
-        .card:hover .card-menu  {
+        .product-grid .card:hover .card-menu  {
             display: block;
             top: 0;
             left:188px;
+            
             transition: 0.05s ease-in-out;
         }
 
@@ -496,19 +504,22 @@
 
 
 
-.quickview-buttons {
-    position: absolute;
-    top:-9000%;
-    overflow: hidden;
-}
-.card:hover .quickview-buttons {
+.product-grid .quickview-buttons {
     position: absolute;
     top:146px;
+    overflow: hidden;
+}
+.product-grid  .card:hover .quickview-buttons {
+   
+    top:146px;
     transition: 0.1s ease-in-out;
+   
+
+    width: 300px;
  
 }
 
-.quickview-button {
+.product-grid .card .quickview-buttons .quickview-button {
  
 
     display: block;
@@ -516,6 +527,7 @@
      width: 257px;
      background: $color-red-0;
      position: relative;
+ 
     
     
      text-align: center;
@@ -536,6 +548,9 @@
      filter: opacity(80%);
    
      z-index: 2;
+     }
+     .product-grid .card:hover  .quickview-buttons .quickview-button {
+        background-color: black;
      }
     a.quickview-button {
      text-decoration: none;
@@ -616,6 +631,13 @@
         justify-content: center;
         align-self: center; 
    
+    }
+    .card-menu button :hover {
+        background-color: black;
+        color: white;
+        border: none !important;
+        outline: none !important;
+        border-radius: 50%;
     }
     .card-menu button i {
       margin-bottom: 30rem;

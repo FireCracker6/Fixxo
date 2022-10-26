@@ -25,7 +25,7 @@
 .disc-card .card {
 
     max-width:200px;
-    border: none !important;
+    border: 1px solid black !important;
     margin-left: auto;
     margin-right: auto;
 
@@ -74,7 +74,7 @@
         z-index: 1;
         margin-top: 0rem;
         overflow: hidden;
-         left:105px; 
+    left:105px; 
         top:-4px;
         right: 1rem;
         list-style: none;
@@ -92,13 +92,13 @@
 
 .disc-card .card:hover .card-menu  {
     display: block;
-    left:105px; 
+  left:105px;  
     top:-4px;
   
 } 
-.disc-card .card-menu .productButton {
+.disc-card .card-menu  .productButton  {
   position: relative;
-    background-color: #fff;
+    background-color: $color-white;
     
     color: black;
     height: 32px;
@@ -118,10 +118,7 @@ font-size: 1rem;
     
   
 }
-.disc-card .card-menu .productButton:hover {
-    background-color: black;
-    color: white;
-}
+
 
 
 @media (min-width:768px) {
@@ -136,17 +133,19 @@ font-size: 1rem;
 
     } 
     .disc-card .card .card-menu {
-        left:-9000%;
+        left: 90px;
     }
+
     .disc-card .card {
+     
 
         max-width: 400px;
-        border: none !important;
+        border: 1px solid black !important;
         margin-left: auto;
         margin-right: auto;
     
         img  {
-            width: 160px;
+            width: 130px;
             height:132px;
             object-fit: cover;
         }
@@ -189,8 +188,7 @@ font-size: 1rem;
             z-index: 1;
             margin-top: 0rem;
             overflow: hidden;
-             left:-9000%; 
-            top:-4px;
+             left: 75px;
             right: 1rem;
             list-style: none;
          
@@ -205,18 +203,65 @@ font-size: 1rem;
     }
     .disc-card .card:hover .card-menu  {
         display: block;
-    left: 105px;
+     left:75px; 
  
     } 
+    .disc-card .card:hover .card-menu button:hover {
+        background-color: black;
+        color: white;
+    }
+  
 
    
     }
 
     @media (min-width:1200px) {
         .disc-card .grid-wrapper {
+            width: 100%;
+            
             .item-3 {
                 display: grid;
             }
         }
+
+        
+        .disc-card .card {
+     
+
+           width: 1000px;
+            border: 1px solid black !important;
+            margin-left: auto;
+            margin-right: auto;
+        
+            img  {
+                width: 160px;
+                height:132px;
+                object-fit: cover;
+            }
+            .card-body {
+              
+              
+                border: 1px solid black;
+            }
+           
+          
+          
+        
+            
+    }
+    .disc-card .card .card-menu  {
+        display: block;
+        left:-9000%; 
+ 
+    } 
+    .disc-card .card:hover .card-menu  {
+        display: block;
+     left:105px; 
+ 
+    } 
+    .disc-card .card:hover .card-menu button:hover {
+        background-color: black;
+        color: white;
     }
     
+}

@@ -118,9 +118,17 @@
 
           .product-grid {
            .quickview-buttons .quickview-button {
-                width: 400px;
+                width: 300px;
                
             }
+            .card .card-menu {
+                left:-9000%;
+            }
+            .card:hover  .card-menu{
+                left:230px;
+            }
+        
+        
           }
          
         }

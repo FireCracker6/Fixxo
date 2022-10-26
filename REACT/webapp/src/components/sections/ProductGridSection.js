@@ -4,49 +4,50 @@ import MobileGridCard from '../MobileGridCard';
 import ProductCard2 from '../ProductCard2';
 
 
-const ProductGridSection = () => {
+const ProductGridSection = ({title, products}) => {
 
-  const [products, setProducts ] = useState([
-    {id: 1, productName: "Penguin Blouse", category: "Fashion", price: "$20.50", rating: 5, img: "https://images.pexels.com/photos/1299391/pexels-photo-1299391.jpeg?cs=srgb&dl=pexels-david-dibert-1299391.jpg&fm=jpg"},
-    {id: 2, productName: " BW Penquin", category: "Fashion", price: "$35.00", rating: 5, img: "https://images.pexels.com/photos/9085057/pexels-photo-9085057.jpeg?cs=srgb&dl=pexels-taryn-elliott-9085057.jpg&fm=jpg"},
-    {id: 3, productName: "Modern Black PW", category: "Fashion", price: "$55.90", rating: 5, img: "https://images.pexels.com/photos/7177267/pexels-photo-7177267.jpeg?cs=srgb&dl=pexels-jeffrey-eisen-7177267.jpg&fm=jpg"},
-    {id: 4, productName: "Modern Black Blouse", category: "Fashion", price: "$42.90", rating: 5, img: "https://images.pexels.com/photos/9393990/pexels-photo-9393990.jpeg?cs=srgb&dl=pexels-chris-f-9393990.jpg&fm=jpg"},
-    {id: 5, productName: "Penguin Blouse", category: "Fashion", price: "$20.50", rating: 5, img: "https://images.pexels.com/photos/1299391/pexels-photo-1299391.jpeg?cs=srgb&dl=pexels-david-dibert-1299391.jpg&fm=jpg"},
-    {id: 6, productName: " BW Penquin", category: "Fashion", price: "$35.00", rating: 5, img: "https://images.pexels.com/photos/9085057/pexels-photo-9085057.jpeg?cs=srgb&dl=pexels-taryn-elliott-9085057.jpg&fm=jpg"},
-    {id: 7, productName: "Modern Black PW", category: "Fashion", price: "$55.90", rating: 5, img: "https://images.pexels.com/photos/7177267/pexels-photo-7177267.jpeg?cs=srgb&dl=pexels-jeffrey-eisen-7177267.jpg&fm=jpg"},
-    {id: 8, productName: "Modern Black Blouse", category: "Fashion", price: "$42.90", rating: 5, img: "https://images.pexels.com/photos/9393990/pexels-photo-9393990.jpeg?cs=srgb&dl=pexels-chris-f-9393990.jpg&fm=jpg"}
-  ])
+  
 
   const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 1200;
 
   React.useEffect(() =>  {
+
+    
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, [] );
 
   return width < breakpoint ? <>
-  
-     
+    <div className='section-title'><h1>{title}</h1></div>
+    <div className="container">
+    <div className="row row-cols-1 row-cols-sm-2  g-4  row-cols-md-2 g-4   row-cols-xl-4  g-4">
+
               {
-                products.map(product =>     <MobileGridCard item={product} />)
+
+              products.map(product =>     <MobileGridCard key={product.id} item={product} />) 
+              
 
               }
-{/*   <MobileGridCard /> <MobileGridCard />  <MobileGridCard /> */}
-  
+       
+
+  </div> 
+  </div>
   </> :   
+  <>
   
-  <div className="container">
+            <div className='section-title'><h1>{title}</h1></div>
+            <div className="container">
     
               <div className="product-gallery-grid"> 
               {
-                products.map(product =>    <ProductCard2 item={product} />)
+                products.map(product =>    <ProductCard2 key={product.id} item={product} />)
 
               }
            
                  
               </div>
   </div>;
-
+  </>
 }
 
 export default ProductGridSection
