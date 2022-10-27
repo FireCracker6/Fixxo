@@ -72,8 +72,8 @@
 
     .card-menu {
         position: absolute;
-     
-        width: 50px;
+  
+        width: 70px;
         z-index: 1;
         margin-top: 0rem;
         overflow: hidden;
@@ -81,13 +81,14 @@
         top:-4px;
         right: 1rem;
         list-style: none;
-     
+        align-items: center;
         padding: .85rem;
         font-size: 1.25rem;
-        border-radius: $border-radius-medium;
+      
      
         transition: top 0.2s ease-in-out;
-    
+   
+       
     }
 
 }
@@ -97,12 +98,13 @@
     display: block;
   left:105px;  
     top:-4px;
+
   
 } 
 .disc-card .card-menu  .productButton  {
   position: relative;
     background-color: $color-white;
-    
+   
     color: black;
     height: 32px;
     width: 32px;
@@ -110,16 +112,21 @@
     border-radius: 50%;
    
     
-    margin-left: 25%;
-    margin-right:25%;
+    margin-left: auto;
+        margin-right: auto;
     vertical-align: middle;
 font-size: 1rem;
     text-align: center;
-    border: none !important;
+    border:none!important;
+    outline: none !important;
     margin-bottom: 5px;
     box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.06) ;
     
   
+}
+.disc-card .card:hover .card-menu button:hover {
+    background-color: black;
+    color: white;
 }
 
 

@@ -22,7 +22,7 @@ const SpecialOffer2 = ({products}) => {
     
            
           <section className="special-offer-2"> 
-          <div className="container">
+          <div className="container--md">
                   <div className="item-2">
                   <h2>2 FOR USD $29</h2>
                   <WhiteButton link="/productdetails" text="SHOP NOW!"  />  

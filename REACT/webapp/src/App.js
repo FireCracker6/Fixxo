@@ -19,6 +19,7 @@ import ExternalLinkIcon from './components/ExternalLinkIcon';
 
 
 
+
 function App() {
 
 
@@ -32,7 +33,7 @@ function App() {
     <Router>
     <Routes>
       <Route path='/' element={<HomeView />}/>
-      <Route path='/productdetails' element={<ProductDetailsView />}/>
+      <Route path='/productdetails/:name' element={<ProductDetailsView />}/>
       <Route path='/categories' element={<CategoriesView />}/>
       <Route path='/contacts' element={<ContactsView />}/>
       <Route path='/*' element={<NotFoundView />}/>
